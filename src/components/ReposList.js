@@ -10,7 +10,7 @@ const ReposList = () => {
   useEffect(() => {
     const fetchRepos = async () => {
       const result = await axios(
-        `https://api.github.com/users/JACKDANYELLE/repos?page=${currentPage}&per_page=20`
+        `https://api.github.com/users/CeeJay1506/repos?page=${currentPage}&per_page=20`
       );
       setRepos(result.data);
     };
@@ -30,7 +30,7 @@ const ReposList = () => {
 
   return (
     <div className="main">
-      <h1>Repo List</h1>
+      <h1>My Repo's List</h1>
 
       <input
         type="search"
